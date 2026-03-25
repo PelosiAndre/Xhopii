@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    background-color: #eb603b;
+    display: flex;
+    align-items: center;
+    padding: 1.39vh 12vw;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 3.7vh;
+    margin-right: 0.63vw;
+    transform: translateY(-0.28vh);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.56vw;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #e5e5e5;
+    padding: 1.39vh 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1.56vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eb603b;
+    font-size: 0.83vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 3.7vh 1.04vw;
+    gap: 3.13vw;
+    max-width: 62.5vw;
+    margin: 0 auto;
+}
+
+#galeria {
+    display: flex;
+    gap: 1.04vw;
+}
+
+#galeria aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vh;
+}
+
+#galeria aside img {
+    width: 3.91vw;
+    height: 3.91vw;
+    object-fit: contain;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#galeria figure {
+    display: flex;
+    align-items: flex-start;
+}
+
+#galeria figure img {
+    width: 23.44vw;
+    height: 23.44vw;
+    object-fit: contain;
+}
+
+#detalhes-produto {
+    display: flex;
+    flex-direction: column;
+    max-width: 26.04vw;
+    padding-top: 0.93vh;
+}
+
+#detalhes-produto h2 {
+    font-size: 1.35vw;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1.39vh;
+}
+
+#preco {
+    font-size: 1.67vw;
+    color: #eb603b;
+    margin-bottom: 1.11vh;
+    font-weight: bold;
+}
+
+#estoque {
+    font-size: 0.83vw;
+    color: #000000;
+    margin-bottom: 2.31vh;
+}
+
+.variacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vh;
+    margin-bottom: 2.31vh;
+}
+
+.variacoes p {
+    font-size: 0.78vw;
+    color: #000000;
+}
+
+.variacoes ul {
+    display: flex;
+    list-style: none;
+    gap: 0.63vw;
+}
+
+.variacoes button {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 0.74vh 0.63vw;
+    font-size: 0.68vw;
+    color: #666666;
+    cursor: pointer;
+}
+
+#tamanho-selecionado {
+    font-size: 0.78vw;
+    color: #000000;
+    margin-bottom: 2.31vh;
+}
+
+#botao-comprar {
+    background-color: #eb603b;
+    color: #ffffff;
+    border: none;
+    padding: 1.39vh 1.56vw;
+    font-size: 0.78vw;
+    cursor: pointer;
+    width: max-content;
+}
