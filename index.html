@@ -1,11 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xhopii - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-  
+<body class="pagina-branca">
+    <header>
+        <section class="header-logo">
+            <figure>
+                <img src="assets/img/logo.png" alt="Xhopii Logo">
+            </figure>
+            <h1>Xhopii</h1>
+        </section>
+        <a href="login.html" id="botao-sair">Sair</a>
+    </header>
+    
+    <nav class="nav-laranja">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cadastro-cliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastro-funcionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastro-produto.html">Cadastro Produto</a></li>
+            <li><a href="visualizar-clientes.html">Ver Clientes</a></li>
+            <li><a href="visualizar-funcionarios.html">Ver Funcionários</a></li>
+            <li><a href="visualizar-produtos.html">Ver Produtos</a></li>
+        </ul>
+    </nav>
+    
+    <main class="home-main">
+        <section id="carrossel-promocoes" class="carousel slide" data-bs-ride="carousel">
+            <section class="carousel-inner">
+                <article class="carousel-item active">
+                    <img src="assets/img/carousel-1.jpg" class="d-block w-100" alt="Promoção 1">
+                </article>
+                <article class="carousel-item">
+                    <img src="assets/img/carousel-2.jpg" class="d-block w-100" alt="Promoção 2">
+                </article>
+                <article class="carousel-item">
+                    <img src="assets/img/carousel-3.jpg" class="d-block w-100" alt="Promoção 3">
+                </article>
+                <article class="carousel-item">
+                    <img src="assets/img/carousel-4.jpg" class="d-block w-100" alt="Promoção 4">
+                </article>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-promocoes" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrossel-promocoes" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </section>
+
+        <section id="banner-frete">
+            <img src="assets/img/home-promocao.png" alt="Exclusivo 1ª compra" style="width: 100%;">
+        </section>
+
+        <section class="divisor-titulo">
+            <h2>DESCOBERTAS DO DIA</h2>
+        </section>
+
+        <section id="produtos-grid">
+            <a href="visualizar-produto.html" class="produto-card">
+                <img src="assets/img/camiseta-preta.png" alt="Camisa CSS">
+                <article class="produto-card-info">
+                    <p class="produto-nome">Camisa Desenvolvedor Front-End CSS</p>
+                    <section class="produto-card-rodape">
+                        <span class="produto-preco">R$56,90</span>
+                        <span class="produto-vendas">171 Vendidos</span>
+                    </section>
+                </article>
+            </a>
+            <a href="visualizar-produto.html" class="produto-card">
+                <img src="assets/img/camiseta-preta.png" alt="Camisa CSS">
+                <article class="produto-card-info">
+                    <p class="produto-nome">Camisa Desenvolvedor Front-End CSS</p>
+                    <section class="produto-card-rodape">
+                        <span class="produto-preco">R$56,90</span>
+                        <span class="produto-vendas">171 Vendidos</span>
+                    </section>
+                </article>
+            </a>
+            <a href="visualizar-produto.html" class="produto-card">
+                <img src="assets/img/camiseta-preta.png" alt="Camisa CSS">
+                <article class="produto-card-info">
+                    <p class="produto-nome">Camisa Desenvolvedor Front-End CSS</p>
+                    <section class="produto-card-rodape">
+                        <span class="produto-preco">R$56,90</span>
+                        <span class="produto-vendas">171 Vendidos</span>
+                    </section>
+                </article>
+            </a>
+            <a href="visualizar-produto.html" class="produto-card">
+                <img src="assets/img/camiseta-preta.png" alt="Camisa CSS">
+                <article class="produto-card-info">
+                    <p class="produto-nome">Camisa Desenvolvedor Front-End CSS</p>
+                    <section class="produto-card-rodape">
+                        <span class="produto-preco">R$56,90</span>
+                        <span class="produto-vendas">171 Vendidos</span>
+                    </section>
+                </article>
+            </a>
+            <a href="visualizar-produto.html" class="produto-card">
+                <img src="assets/img/camiseta-preta.png" alt="Camisa CSS">
+                <article class="produto-card-info">
+                    <p class="produto-nome">Camisa Desenvolvedor Front-End CSS</p>
+                    <section class="produto-card-rodape">
+                        <span class="produto-preco">R$56,90</span>
+                        <span class="produto-vendas">171 Vendidos</span>
+                    </section>
+                </article>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <article class="footer-coluna">
+                <h4>ATENDIMENTO AO CLIENTE</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>SOBRE A XHOPII</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>PAGAMENTO</h4>
+                <section class="pagamento-icones">
+                    <img src="assets/img/logo-visa.png" alt="Visa">
+                    <img src="assets/img/logo-mastercard.png" alt="Mastercard">
+                    <img src="assets/img/logo-american-express.png" alt="American Express">
+                    <img src="assets/img/logo-boleto.png" alt="Boleto">
+                    <img src="assets/img/logo-hipercard.png" alt="Hipercard">
+                    <img src="assets/img/logo-elo.png" alt="Elo">
+                </section>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>SIGA-NOS</h4>
+                <ul>
+                    <li><a href="#"><img src="assets/img/logo-instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="assets/img/logo-twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#"><img src="assets/img/logo-facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#"><img src="assets/img/logo-youtube.png" alt="YouTube"> YouTube</a></li>
+                    <li><a href="#"><img src="assets/img/logo-linkedln.png" alt="LinkedIn"> LinkedIn</a></li>
+                </ul>
+            </article>
+
+            <article class="footer-coluna">
+                <h4>ATENDIMENTO AO CLIENTE</h4>
+                <img src="assets/img/qr-code.png" alt="QR Code" class="qr-code">
+                <section class="app-links">
+                    <img src="assets/img/logo-google-play.png" alt="Google Play">
+                    <img src="assets/img/logo-store-apple.png" alt="App Store">
+                </section>
+            </article>
+        </section>
+
+        <section class="footer-bottom">
+            <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

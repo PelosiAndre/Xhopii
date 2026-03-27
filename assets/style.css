@@ -6,18 +6,23 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f5f5f5; 
     color: #333333;
 }
 
-header {
-    background-color: #eb603b;
-    display: flex;
-    align-items: center;
-    padding: 1.39vh 12vw;
+.pagina-branca {
+    background-color: #ffffff;
 }
 
-header figure {
+header {
+    background-color: #fc5733;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vh 3vw;
+}
+
+.header-logo {
     display: flex;
     align-items: center;
 }
@@ -34,22 +39,50 @@ header h1 {
     font-weight: bold;
 }
 
+#botao-sair {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
 nav {
-    background-color: #e5e5e5;
-    padding: 1.39vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
     justify-content: center;
     list-style: none;
     gap: 1.56vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #eb603b;
     font-size: 0.83vw;
+}
+
+.nav-laranja {
+    background-color: #fb7632;
+}
+
+.nav-laranja a {
+    color: #ffffff;
+}
+
+.nav-cinza {
+    background-color: #e5e5e5;
+}
+
+.nav-cinza a {
+    color: #fc5733;
 }
 
 main {
@@ -107,7 +140,7 @@ main {
 
 #preco {
     font-size: 1.67vw;
-    color: #eb603b;
+    color: #fc5733;
     margin-bottom: 1.11vh;
     font-weight: bold;
 }
@@ -152,11 +185,183 @@ main {
 }
 
 #botao-comprar {
-    background-color: #eb603b;
+    background-color: #fc5733;
     color: #ffffff;
     border: none;
     padding: 1.39vh 1.56vw;
     font-size: 0.78vw;
     cursor: pointer;
     width: max-content;
+}
+
+.home-main {
+    flex-direction: column;
+    max-width: 75vw;
+    background-color: transparent;
+    padding: 2vh 0;
+}
+
+#carrossel-promocoes, #banner-frete {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.divisor-titulo {
+    text-align: center;
+    width: 90%;
+    margin: 4vh auto 3vh auto;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid #fc5733;
+}
+
+.divisor-titulo h2 {
+    color: #fc5733;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+#produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1vw;
+    width: 100%;
+}
+
+.produto-card {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.produto-card:hover {
+    border: 1px solid #fc5733;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.produto-card-info {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.produto-nome {
+    font-size: 0.85vw;
+    color: #333333;
+    margin-bottom: 1vh;
+}
+
+.produto-card-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produto-card-rodape .produto-preco {
+    color: #fc5733;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.produto-card-rodape .produto-vendas {
+    font-size: 0.7vw;
+    color: #888888;
+}
+
+footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    max-width: 100%;
+}
+
+.footer-coluna {
+    flex: 1;
+    padding: 0 1vw;
+}
+
+.footer-coluna h4 {
+    font-size: 0.9vw;
+    color: #333333;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-coluna li {
+    margin-bottom: 1vh;
+}
+
+.footer-coluna a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.footer-coluna a img {
+    width: 1vw;
+    height: auto;
+}
+
+.footer-coluna a:hover {
+    color: #fc5733;
+}
+
+.pagamento-icones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5vw;
+}
+
+.pagamento-icones img {
+    width: 100%;
+    max-width: 3vw;
+    height: auto;
+}
+
+.qr-code {
+    width: 6vw;
+    height: auto;
+    margin-bottom: 1vh;
+}
+
+.app-links img {
+    width: 6vw;
+    height: auto;
+    display: block;
+    margin-bottom: 0.5vh;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 2vh 0;
+    background-color: #f5f5f5;
+    color: #000000;
+    font-size: 0.8vw;
+    border-top: 1px solid #e0e0e0;
 }
