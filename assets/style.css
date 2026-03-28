@@ -14,6 +14,10 @@ body {
     background-color: #ffffff;
 }
 
+.fundo-c2c2c2 {
+    background-color: #c2c2c2;
+}
+
 header {
     background-color: #fc5733;
     display: flex;
@@ -453,14 +457,16 @@ footer {
     gap: 2vh;
 }
 
-.login-form input {
+.login-form input,
+.login-form textarea {
     padding: 1.5vh 1vw;
     border: 1px solid #dcdcdc;
     font-size: 1vw;
     outline: none;
 }
 
-.login-form input:focus {
+.login-form input:focus,
+.login-form textarea:focus {
     border-color: #fc5733;
 }
 
@@ -560,4 +566,99 @@ footer {
     font-size: 1.4vw;
     margin-bottom: 4vh;
     font-weight: normal;
+}
+
+.cadastro-main {
+    display: flex;
+    justify-content: center;
+    padding: 6vh 0;
+    width: 100%;
+}
+
+.cadastro-caixa {
+    background-color: #ffffff;
+    width: 35vw;
+    padding: 4vh 3vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cadastro-caixa h2 {
+    text-align: center;
+    color: #fc5733;
+    font-size: 1.5vw;
+    margin-bottom: 4vh;
+    font-weight: normal;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="tel"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"],
+.cadastro-form input[type="date"],
+.cadastro-form textarea {
+    padding: 1.5vh 1vw;
+    border: 1px solid #dcdcdc;
+    font-size: 1vw;
+    outline: none;
+    width: 100%;
+}
+
+.cadastro-form input:focus,
+.cadastro-form textarea:focus {
+    border-color: #fc5733;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 2vh 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.file-input-container p {
+    color: #fc5733;
+    font-size: 1vw;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.custom-file-upload {
+    background-color: #ffffff;
+    border: 1px solid #fc5733;
+    color: #fc5733;
+    border-radius: 1vw;
+    padding: 1vh 2vw;
+    font-size: 0.9vw;
+    cursor: pointer;
+    width: max-content;
+}
+
+.file-input-container span {
+    color: #666666;
+    font-size: 0.9vw;
+}
+
+.file-input-container input[type="file"] {
+    display: none;
+}
+
+.cadastro-form button[type="submit"] {
+    background-color: #fc5733;
+    color: #ffffff;
+    border: none;
+    padding: 1.5vh 0;
+    font-size: 1.1vw;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1vh;
 }
