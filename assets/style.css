@@ -110,7 +110,13 @@ main {
     height: 3.91vw;
     object-fit: contain;
     cursor: pointer;
-    opacity: 0.6;
+    border: 2px solid transparent;
+    opacity: 0.6; /* OPACIDADE PADRÃO RESTAURADA */
+}
+
+#galeria aside img.thumbnail-ativa {
+    opacity: 1;
+    border: 2px solid #fc5733;
 }
 
 #galeria figure {
