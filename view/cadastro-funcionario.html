@@ -35,12 +35,12 @@
             <form class="cadastro-form" id="form-funcionario">
                 <input type="text" placeholder="Nome" required>
                 <input type="text" placeholder="Sobrenome" required>
-                <input type="text" placeholder="CPF" required>
+                <input type="text" inputmode="numeric" placeholder="CPF" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                 <input type="date" required>
-                <input type="tel" placeholder="Telefone" required>
+                <input type="tel" inputmode="numeric" placeholder="Telefone" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                <input type="text" placeholder="Cargo / função" required>
+                <input type="text" inputmode="numeric" placeholder="Salário" oninput="this.value = this.value.replace(/[^0-9.,]/g, '')" required>
                 <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Cargo" required>
-                <input type="text" inputmode="numeric" placeholder="Salário" required>
                 <input type="password" placeholder="Senha" required>
 
                 <section class="file-input-container">

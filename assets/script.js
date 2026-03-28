@@ -89,4 +89,21 @@ document.addEventListener('DOMContentLoaded', () => {
             spanNomeFileFuncionario.textContent = 'Nenhum arquivo escolhido';
         });
     }
+
+    const formProduto = document.getElementById('form-produto');
+    const inputFotoProduto = document.getElementById('foto-produto');
+    const spanNomeFileProduto = document.getElementById('file-name-produto');
+
+    if (formProduto && inputFotoProduto && spanNomeFileProduto) {
+        inputFotoProduto.addEventListener('change', () => {
+            spanNomeFileProduto.textContent = inputFotoProduto.files[0] ? inputFotoProduto.files[0].name : 'Nenhum arquivo escolhido';
+        });
+
+        formProduto.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            alert('Produto cadastrado com sucesso!');
+            formProduto.reset();
+            spanNomeFileProduto.textContent = 'Nenhum arquivo escolhido';
+        });
+    }
 });
