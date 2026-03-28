@@ -380,6 +380,10 @@ footer {
     padding: 2vh 12vw;
 }
 
+.header-cinza {
+    background: #f5f5f5;
+}
+
 .logo-login {
     display: flex;
     align-items: center;
@@ -519,4 +523,41 @@ footer {
 .login-social button img {
     width: 1.2vw;
     height: auto;
+}
+
+.redefinir-main {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8vh 0;
+    max-width: 100%;
+}
+
+.redefinir-caixa {
+    width: 32vw;
+    background: #ffffff;
+    padding: 5vh 3vw 6vh 3vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.redefinir-voltar {
+    position: absolute;
+    top: 3vh;
+    left: 2vw;
+}
+
+.redefinir-voltar img {
+    width: 1.2vw;
+    height: auto;
+}
+
+.redefinir-caixa h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 1.4vw;
+    margin-bottom: 4vh;
+    font-weight: normal;
 }
