@@ -106,4 +106,23 @@ document.addEventListener('DOMContentLoaded', () => {
             spanNomeFileProduto.textContent = 'Nenhum arquivo escolhido';
         });
     }
+
+    const botoesExcluir = document.querySelectorAll('.btn-excluir');
+    const botoesEditar = document.querySelectorAll('.btn-editar');
+
+    if (botoesExcluir.length > 0) {
+        botoesExcluir.forEach(botao => {
+            botao.addEventListener('click', () => {
+                confirm('Tem certeza que deseja excluir este registro?');
+            });
+        });
+    }
+
+    if (botoesEditar.length > 0) {
+        botoesEditar.forEach(botao => {
+            botao.addEventListener('click', () => {
+                alert('Abrindo tela de edição...');
+            });
+        });
+    }
 });
