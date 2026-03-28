@@ -72,4 +72,21 @@ document.addEventListener('DOMContentLoaded', () => {
             spanNomeFileCliente.textContent = 'Nenhum arquivo escolhido';
         });
     }
+
+    const formFuncionario = document.getElementById('form-funcionario');
+    const inputFotoFuncionario = document.getElementById('foto-funcionario');
+    const spanNomeFileFuncionario = document.getElementById('file-name-funcionario');
+
+    if (formFuncionario && inputFotoFuncionario && spanNomeFileFuncionario) {
+        inputFotoFuncionario.addEventListener('change', () => {
+            spanNomeFileFuncionario.textContent = inputFotoFuncionario.files[0] ? inputFotoFuncionario.files[0].name : 'Nenhum arquivo escolhido';
+        });
+
+        formFuncionario.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            alert('Funcionário cadastrado com sucesso!');
+            formFuncionario.reset();
+            spanNomeFileFuncionario.textContent = 'Nenhum arquivo escolhido';
+        });
+    }
 });
