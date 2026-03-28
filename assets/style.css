@@ -111,7 +111,7 @@ main {
     object-fit: contain;
     cursor: pointer;
     border: 2px solid transparent;
-    opacity: 0.6; /* OPACIDADE PADRÃO RESTAURADA */
+    opacity: 0.6;
 }
 
 #galeria aside img.thumbnail-ativa {
@@ -370,4 +370,153 @@ footer {
     color: #000000;
     font-size: 0.8vw;
     border-top: 1px solid #e0e0e0;
+}
+
+.header-login {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 12vw;
+}
+
+.logo-login {
+    display: flex;
+    align-items: center;
+}
+
+.logo-login img {
+    width: 3.5vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.logo-login h1 {
+    font-size: 1.8vw;
+    margin: 0;
+    color: #fc5733;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo-login h1 span {
+    color: #333333;
+    margin-left: 1vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+.ajuda-login {
+    color: #fc5733;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.login-main {
+    background-color: #fc5733;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8vh 0;
+    max-width: 100%;
+}
+
+.login-container {
+    display: grid;
+    place-items: center;
+}
+
+.login-caixa {
+    width: 28vw;
+    background: #ffffff;
+    padding: 3vh 2vw;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-caixa h2 {
+    text-align: left;
+    color: #333333;
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+    font-weight: normal;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.login-form input {
+    padding: 1.5vh 1vw;
+    border: 1px solid #dcdcdc;
+    font-size: 1vw;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #fc5733;
+}
+
+#botao-entre {
+    background-color: #fc5733;
+    color: #ffffff;
+    border: none;
+    padding: 1.5vh 0;
+    font-size: 1vw;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.login-opcoes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8vw;
+}
+
+.login-opcoes a {
+    color: #0055b3;
+    text-decoration: none;
+}
+
+.login-ou {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #999999;
+    font-size: 0.8vw;
+}
+
+.login-ou .linha {
+    flex: 1;
+    height: 1px;
+    background-color: #dcdcdc;
+}
+
+.login-social {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5vw;
+}
+
+.login-social button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1vh 0;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    font-size: 0.8vw;
+    cursor: pointer;
+    color: #333333;
+}
+
+.login-social button img {
+    width: 1.2vw;
+    height: auto;
 }
