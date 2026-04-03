@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Xhopii - Ver Lojas</title>
 </head>
-<body>
-  
+<body class="fundo-c2c2c2">
+    <header>
+        <section class="header-logo">
+            <figure>
+                <img src="../assets/img/logo.png" alt="Xhopii Logo">
+            </figure>
+            <h1>Xhopii</h1>
+        </section>
+        <a href="login.html" id="botao-sair">Sair</a>
+    </header>
+
+    <nav class="nav-laranja">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cadastro-cliente.html">Cadastro Cliente</a></li>
+            <li><a href="cadastro-funcionario.html">Cadastro Funcionário</a></li>
+            <li><a href="cadastro-produto.html">Cadastro Produto</a></li>
+            <li><a href="cadastro-loja.html">Cadastro Loja</a></li>
+            <li><a href="visualizar-clientes.html">Ver Clientes</a></li>
+            <li><a href="visualizar-funcionarios.html">Ver Funcionários</a></li>
+            <li><a href="visualizar-produtos.html">Ver Produtos</a></li>
+            <li><a href="visualizar-lojas.html">Ver Lojas</a></li>
+        </ul>
+    </nav>
+
+    <main class="lista-main">
+        <section class="lista-caixa">
+            <section class="titulo-paginas-lista">
+                <h2>Lojas Cadastradas</h2>
+            </section>
+
+            <table class="tabela-dados">
+                <thead>
+                    <tr>
+                        <th>Nome da Loja</th>
+                        <th>Responsável</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Cidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Loja Bela</td>
+                        <td>João Belo</td>
+                        <td>lojabela@email.com</td>
+                        <td>(18) 99999-9999</td>
+                        <td>Presidente Prudente</td>
+                        <td class="tabela-acoes">
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agro Center</td>
+                        <td>Maria Souza</td>
+                        <td>agro@email.com</td>
+                        <td>(18) 98888-8888</td>
+                        <td>Álvares Machado</td>
+                        <td class="tabela-acoes">
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <article class="footer-coluna">
+                <h4>ATENDIMENTO AO CLIENTE</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>SOBRE A XHOPII</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpago</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>PAGAMENTO</h4>
+                <section class="pagamento-icones">
+                    <img src="../assets/img/logo-visa.png" alt="Visa">
+                    <img src="../assets/img/logo-mastercard.png" alt="Mastercard">
+                    <img src="../assets/img/logo-american-express.png" alt="American Express">
+                    <img src="../assets/img/logo-boleto.png" alt="Boleto">
+                    <img src="../assets/img/logo-hipercard.png" alt="Hipercard">
+                    <img src="../assets/img/logo-elo.png" alt="Elo">
+                </section>
+            </article>
+            
+            <article class="footer-coluna">
+                <h4>SIGA-NOS</h4>
+                <ul>
+                    <li><a href="#"><img src="../assets/img/logo-instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="../assets/img/logo-twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#"><img src="../assets/img/logo-facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#"><img src="../assets/img/logo-youtube.png" alt="YouTube"> YouTube</a></li>
+                    <li><a href="#"><img src="../assets/img/logo-linkedln.png" alt="LinkedIn"> LinkedIn</a></li>
+                </ul>
+            </article>
+
+            <article class="footer-coluna">
+                <h4>ATENDIMENTO AO CLIENTE</h4>
+                <img src="../assets/img/qr-code.png" alt="QR Code" class="qr-code">
+                <section class="app-links">
+                    <img src="../assets/img/logo-google-play.png" alt="Google Play">
+                    <img src="../assets/img/logo-store-apple.png" alt="App Store">
+                </section>
+            </article>
+        </section>
+
+        <section class="footer-bottom">
+            <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="../assets/script.js" defer></script>
 </body>
 </html>
