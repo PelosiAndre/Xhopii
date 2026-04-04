@@ -107,6 +107,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const formLoja = document.getElementById('form-loja');
+    const inputLogoLoja = document.getElementById('logo-loja');
+    const spanNomeFileLoja = document.getElementById('file-name-loja');
+
+    if (formLoja && inputLogoLoja && spanNomeFileLoja) {
+        inputLogoLoja.addEventListener('change', () => {
+            spanNomeFileLoja.textContent = inputLogoLoja.files[0] ? inputLogoLoja.files[0].name : 'Nenhum arquivo escolhido';
+        });
+
+        formLoja.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            alert('Loja cadastrada com sucesso!');
+            formLoja.reset();
+            spanNomeFileLoja.textContent = 'Nenhum arquivo escolhido';
+        });
+    }
+
+    const formCupom = document.getElementById('form-cupom');
+
+    if (formCupom) {
+        formCupom.addEventListener('submit', (evento) => {
+            evento.preventDefault();
+            alert('Cupom cadastrado com sucesso!');
+            formCupom.reset();
+        });
+    }
+
     const botoesExcluir = document.querySelectorAll('.btn-excluir');
     const botoesEditar = document.querySelectorAll('.btn-editar');
 
